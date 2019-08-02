@@ -20,8 +20,8 @@ describe('My first functions', () => {
     it('isPrime returns false if passed 9', () => assert.equal(false, app._tests.isPrime(9)));
   });
   describe('howManyPrimes', () => {
-    it('should return 5 if given a range of 0 - 10', () => {
-      assert.equal(5, app._tests.howManyPrimes(0, 10));
+    it('should return 4 if given a range of 0 - 10', () => {
+      assert.equal(4, app._tests.howManyPrimes(0, 10));
     })
     it('should return 21 if given a range of 10 - 100', () => {
       assert.equal(21, app._tests.howManyPrimes(10, 100));

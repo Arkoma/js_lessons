@@ -7,7 +7,7 @@ function cube(n) {
 }
 
 const isPrime = (n) => {
-  // a number is prime if it can only be divided by 1 and itself with a remainder of 0 
+  // a number is prime if it is greater than one and can only be divided by 1 and itself with a remainder of 0 
   // return true if a number is prime and false if the number is not prime.
 }
 
