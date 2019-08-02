@@ -1,19 +1,27 @@
 const helloWorld = () => {
-  // insert code below this line to return a string that says the exact phrase "Hello World"
+  return "Hello World"
 }
 
 function cube(n) {
-   // insert code below that returns the cube of whatever number is passed into the cube function as argument n
+  return n*n*n;
 }
 
 const isPrime = (n) => {
-  // a number is prime if it can only be divided by 1 and itself with a remainder of 0 
-  // return true if a number is prime and false if the number is not prime.
+  let count = 0;
+  if (n > 1) {
+    for (let i = 2; i <= n; i++) {
+      if (n%i === 0) count++;
+    }
+    return count === 1;
+  } else { return false; }
 }
 
 const howManyPrimes = (low, high) => {
-  // insert code that uses returns the number of primes less than high but greater than or equal to low
-  // HINT: feel free to use the isPrime function in here.
+  let count = 0;
+  for (let i = low; i <= high; i++) {
+    if (isPrime(i)) count++;
+  }
+  return count;
 }
 
 exports._tests = {helloWorld, cube, howManyPrimes, isPrime}
